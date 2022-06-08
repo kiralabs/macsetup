@@ -20,3 +20,4 @@ Imports your Public and Private SSH keys, and creates a config that will import 
 - More Scripts
 - Proper support for Intel Macs (low priority for me - also might just work without any issues already)
 - Support for future dotfiles
+- Setup and support OhmyZSH and plugins/theme.

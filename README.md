@@ -15,3 +15,8 @@ Installs pinentry-mac, imports your Private GPG key, and sets it up for signing 
 ### sshsetup.sh
 Imports your Public and Private SSH keys, and creates a config that will import the password to your keychain.
 
+## To-Do
+- Add TUI style "setup" - user can select what they want to run, etc.
+- More Scripts
+- Proper support for Intel Macs (low priority for me - also might just work without any issues already)
+- Support for future dotfiles

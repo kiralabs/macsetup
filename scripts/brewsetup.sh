@@ -22,7 +22,8 @@ then
     echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zprofile
     eval "$(/opt/homebrew/bin/brew shellenv)"
     echo "${green}[Done] Homebrew appears to be installed, installing tools in 5 seconds."
-    sleep 5 clear
+    sleep 5 
+    clear
 else
     echo "${pink}[Note] Homebrew already appears to be installed, skipping to installing tools in 5 seconds."
     sleep 5
@@ -31,11 +32,8 @@ fi
 
 # install tools
 echo "${cyan}[Status] Installing tools with homebrew"
-echo "[Status] Installing gpg, iterm2, archey if not already installed."
-command -v gpg >/dev/null 2>&1 || {gnupg=brew install gnupg}
-command -v /Applications/iTerm.app/Contents/MacOS/iTerm2 >/dev/null 2>&1 || {iterm=brew install iterm2}
-command -v archey >/dev/null 2>&1 || {archey=brew install archey4}
-$gnupg
-$iterm
-$archey
+echo "[Status] Installing gpg, iterm2, archey - At the moment it will try to install them even if they are already installed."
+brew install gnupg
+brew install --cask iterm2
+brew install archey4
 echo "${green}[Done] Homebrew and tool installation complete!${reset}"

@@ -34,9 +34,7 @@ fi
 echo "${cyan}[Status] Installing tools with homebrew"
 echo "[Status] Installing gpg, iterm2, neofetch if not already installed."
 command -v gpg >/dev/null 2>&1 || {gnupg=brew install gnupg}
-command -v neofetch >/dev/null 2>&1 || {neofetch=brew install neofetch}
 command -v /Applications/iTerm.app/Contents/MacOS/iTerm2 >/dev/null 2>&1 || {iterm=brew install iterm2}
 $gnupg
-$neofetch
 $iterm
 echo "${green}[Done] Homebrew and tool installation complete!${reset}"

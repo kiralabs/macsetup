@@ -34,7 +34,7 @@ echo "${cyan}[Status] Installing tools with homebrew"
 echo "[Status] Installing gpg, iterm2, archey if not already installed."
 command -v gpg >/dev/null 2>&1 || {gnupg=brew install gnupg}
 command -v /Applications/iTerm.app/Contents/MacOS/iTerm2 >/dev/null 2>&1 || {iterm=brew install iterm2}
-command -v archey >/dev/null 2>&1 || {archey=brew install archey}
+command -v archey >/dev/null 2>&1 || {archey=brew install archey4}
 $gnupg
 $iterm
 $archey
